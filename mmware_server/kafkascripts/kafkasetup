@@ -37,7 +37,7 @@ pip install kafka-python
 cd ~/kafka
 
 # Start ZooKeeper Server
-## not needed bin/zookeeper-server-start.sh config/zookeeper.properties
+# bin/zookeeper-server-start.sh config/zookeeper.properties
 zkServer.sh start config/zookeeper.properties
 netstat -ntcpul | grep 2181
 #check 2181 is open
@@ -74,4 +74,11 @@ bin/kafka-console-producer.sh --broker-list mmwserver:9092 --topic sample
 bin/kafka-console-consumer.sh --bootstrap-server mmwserver:9092 --topic sample --from-beginning
 
 
+#-----------------------------------------MONGO ON SERVER
+sudo apt install -y mongodb
+mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+pip install pymongo
 
+#====TO CHECK MONGO
+mongo sample
+db.sample.find()
