@@ -1,0 +1,77 @@
+#-------------------------------INSTALLATION
+#FOR KAFKA SERVER=============
+#set static IP 192.168.29.250
+
+#install kafka
+java -version
+#check java is installed
+pip install kafka-python
+sudo apt-get install zookeeperd
+
+#start zookeeper
+#path to zookeeper /usr/share/zookeeper/bin/
+#add path in .bashrc 
+sudo chmod 777 /usr/share/zookeeper/bin/*
+sudo chmod 777 /var/log/zookeeper/zookeeper.out
+sudo chmod 777 /var/log/zookeeper/zookeeper.log
+
+#Download kafka latest tar
+# mkdir ~/kafka
+# untar contents in ~/kafka
+# edit /etc/host with
+#192.168.29.253 kafka mmwserver
+
+#FOR KAFKA CONSUMER/PRODUCER in Pi, NOT server======
+#set static IP 192.168.29.253
+#ssh to pi@192.168.29.253
+
+pip install kafka-python
+#Download kafka latest tar
+# mkdir ~/kafka
+# untar contents in ~/kafka
+# edit /etc/host with
+#192.168.29.253 kafka mmwserver
+
+#--------------------------------------RUNNING SERVER
+
+cd ~/kafka
+
+# Start ZooKeeper Server
+## not needed bin/zookeeper-server-start.sh config/zookeeper.properties
+zkServer.sh start config/zookeeper.properties
+netstat -ntcpul | grep 2181
+#check 2181 is open
+
+# Start Kafka Server
+bin/kafka-server-start.sh config/server.properties
+
+#create topic
+bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic sample
+
+#check topic
+bin/kafka-topics.sh --list --zookeeper localhost:2181
+
+bin/kafka-topics.sh --describe --zookeeper localhost:2181 --topic sample
+
+#-------------------------------------RUNNING PROD/CONSUME at LOCAL NODE
+#start console consumer
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic sample
+
+#start console producer
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic sample --from-beginning
+
+#--------------------------------------RUNNING PROD/CONSUME at Pi NODE
+
+#check topic
+bin/kafka-topics.sh --list --zookeeper mmwserver:2181
+
+bin/kafka-topics.sh --describe --zookeeper mmwserver:2181 --topic sample
+
+#start console consumer
+bin/kafka-console-producer.sh --broker-list mmwserver:9092 --topic sample
+
+#start console producer
+bin/kafka-console-consumer.sh --bootstrap-server mmwserver:9092 --topic sample --from-beginning
+
+
+
