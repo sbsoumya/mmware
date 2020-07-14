@@ -3,6 +3,9 @@ sudo apt install mosquitto mosquitto-clients
 sudo systemctl enable mosquitto
 sudo systemctl status mosquitto
 
+#paho-mqtt for python
+pip install paho-mqtt
+
 #subscriber
 mosquitto_sub -h localhost -t "mqttsample"
 
