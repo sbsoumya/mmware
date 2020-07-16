@@ -10,7 +10,7 @@ with client:
 
     db = client.sample
 
-    plumbergame = db.sample.find()
+    plumbergame = db.kafkasample.find()
 
     for deal in plumbergame:
         print('{0} {1}'.format(deal['plumber'],deal['number']))

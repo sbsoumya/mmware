@@ -1,6 +1,8 @@
 #Confluent was downloaded to  use the confluent-kafka-mqtt connector
 #This setup is alternate to independent kafka and zookeeper setup
+#In case independent zookeeper and kafka is being used and is running, only running the connector is enough, start from HERE!!
 #Use the link below for details for ubuntu setup
+
 https://docs.confluent.io/current/installation/installing_cp/deb-ubuntu.html#systemd-ubuntu-debian-install
 
 wget -qO - https://packages.confluent.io/deb/5.5/archive.key | sudo apt-key add -
@@ -27,6 +29,8 @@ autopurge.purgeInterval=24
 sudo systemctl start confluent-zookeeper 
 sudo systemctl status confluent-zookeeper
 #In case service is not starting use the Exec command  in the service
+sudo /usr/bin/zookeeper-server-start /etc/kafka/zookeeper.properties
+
 
 #Kafka=======================CONFIG and start
 #properties file
@@ -41,7 +45,17 @@ sudo systemctl start confluent-schema-registry
 ===================topic creation etc.
 follow the instructions kafkasetup file.
 the bin/kafka***.sh can be replaced with kafka*** , both work
-using "kafkasample" topic for confluent-kafka experiments
+
+
+#create topic
+kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic kafkasample
+
+#start console consumer
+kafka-console-producer --broker-list localhost:9092 --topic kafkasample
+
+#start console producer
+kafka-console-consumer --bootstrap-server localhost:9092 --topic kafkasample --from-beginning
+
 
 #CONFLUNT-HUB=====================INSTALL
 confluent-hub is required for easy installation of confluent connector plugins
@@ -52,7 +66,47 @@ export PATH=/home/soumya/mmware_mmwareserver/confluent-hub-client-latest/bin:$PA
 
 #MQTT connector====================INSTALLATION
 confluent-hub install confluentinc/kafka-connect-mqtt:latest
- 
+
+#====================================Starting
+
+Either --------------------------------------------------------via Properties file, didnt work
+#=======================CONFIG
+modify file /usr/share/confluent-hub-components/confluentinc-kafka-connect-mqtt/etc/source-anonymous.properties
+with 
 
 
+name=mqtt-source
+tasks.max=1
+connector.class=io.confluent.connect.mqtt.MqttSourceConnector
+mqtt.server.uri=tcp://pi:1883
+mqtt.topics=mqttsample
+kafka.topic=kafkasample
+confluent.topic.bootstrap.servers=localhost:9092
+confluent.topic.replication.factor=1
 
+#-----For independent Zookeeper and kafka start HERE!!
+and then start kafka connect
+connect-distributed /etc/schema-registry/connect-avro-distributed.properties
+
+OR -------------------------------------------------------- via REST Better!!
+
+
+#======================DISTRIBUTED MODE RUN
+curl -s -X POST -H 'Content-Type: application/json' http://localhost:8083/connectors -d '{
+    "name" : "mqtt-source",
+"config" : {
+    "connector.class" : "io.confluent.connect.mqtt.MqttSourceConnector",
+    "tasks.max" : "1",
+    "mqtt.server.uri" : "tcp://pi:1883",
+    "mqtt.topics" : "mqttsample",
+    "kafka.topic" : "kafkasample",
+    "confluent.topic.bootstrap.servers": "localhost:9092",
+    "confluent.topic.replication.factor": "1",
+    "confluent.license":""
+    }
+}'
+
+#=============Other curl commands
+curl -s "http://localhost:8083/connectors"
+curl -s "http://localhost:8083/connectors/mqtt-source/status"
+curl -s -X DELETE localhost:8083/connectors/mqtt-source
