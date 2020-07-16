@@ -19,7 +19,7 @@ sudo chmod 777 /var/log/zookeeper/zookeeper.log
 # mkdir ~/kafka
 # untar contents in ~/kafka
 # edit /etc/host with
-#192.168.29.253 kafka mmwserver
+#192.168.29.250 kafka mmwserver
 
 #FOR KAFKA CONSUMER/PRODUCER in Pi, NOT server======
 #set static IP 192.168.29.253
@@ -30,7 +30,7 @@ pip install kafka-python
 # mkdir ~/kafka
 # untar contents in ~/kafka
 # edit /etc/host with
-#192.168.29.253 kafka mmwserver
+#192.168.29.250 kafka mmwserver
 
 #--------------------------------------RUNNING SERVER
 
@@ -39,6 +39,7 @@ cd ~/kafka
 # Start ZooKeeper Server
 # bin/zookeeper-server-start.sh config/zookeeper.properties
 zkServer.sh start config/zookeeper.properties
+#to stop use zkServer.sh stop config/zookeeper.properties
 netstat -ntcpul | grep 2181
 #check 2181 is open
 

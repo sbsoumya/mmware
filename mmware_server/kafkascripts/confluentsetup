@@ -1,0 +1,58 @@
+#Confluent was downloaded to  use the confluent-kafka-mqtt connector
+#This setup is alternate to independent kafka and zookeeper setup
+#Use the link below for details for ubuntu setup
+https://docs.confluent.io/current/installation/installing_cp/deb-ubuntu.html#systemd-ubuntu-debian-install
+
+wget -qO - https://packages.confluent.io/deb/5.5/archive.key | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.confluent.io/deb/5.5 stable main"
+sudo apt-get update && sudo apt-get install confluent-community-2.12
+# this is a make-it-work solution
+#Zookeeper================CONFIG AND START
+#properties file
+/etc/kafka/zookeeper.properties
+Modify to 
+tickTime=2000
+dataDir=/var/lib/zookeeper/
+clientPort=2181
+initLimit=5
+syncLimit=2
+server.1=zoo1:2888:3888
+#server.2=zoo2:2888:3888
+#server.3=zoo3:2888:3888
+autopurge.snapRetainCount=3
+autopurge.purgeInterval=24
+
+#If not running remove the Zookeeperdata directory /var/lib/zookeeper the service will create this again
+#to start service 
+sudo systemctl start confluent-zookeeper 
+sudo systemctl status confluent-zookeeper
+#In case service is not starting use the Exec command  in the service
+
+#Kafka=======================CONFIG and start
+#properties file
+/etc/kafka/server.properties
+sudo systemctl start confluent-kafka
+# if client ID mismatch occurs delete the /var/lib/kafka/meta.properties
+#In case service is not starting use the Exec command  in the service , to check errors as well as starting
+
+#Schema registry=============start
+sudo systemctl start confluent-schema-registry
+
+===================topic creation etc.
+follow the instructions kafkasetup file.
+the bin/kafka***.sh can be replaced with kafka*** , both work
+using "kafkasample" topic for confluent-kafka experiments
+
+#CONFLUNT-HUB=====================INSTALL
+confluent-hub is required for easy installation of confluent connector plugins
+download latest confluent hub, extract and add the bin path to your user path.
+e.g, add to .bashrc the following line
+export PATH=/home/soumya/mmware_mmwareserver/confluent-hub-client-latest/bin:$PATH
+
+
+#MQTT connector====================INSTALLATION
+confluent-hub install confluentinc/kafka-connect-mqtt:latest
+ 
+
+
+
