@@ -1,0 +1,37 @@
+[2.137s] Invoking command in '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub': PYTHONPATH=/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub build --build-base /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/build install --prefix /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/install/py_pubsub --record /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/install.log --single-version-externally-managed
+[4.041s] running egg_info
+[4.045s] creating /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/py_pubsub.egg-info
+[4.047s] writing /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[4.049s] writing dependency_links to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[4.050s] writing entry points to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[4.052s] writing requirements to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/py_pubsub.egg-info/requires.txt
+[4.053s] writing top-level names to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[4.064s] writing manifest file '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[4.329s] reading manifest file '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[4.337s] writing manifest file '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[4.338s] running build
+[4.339s] running build_py
+[4.341s] creating /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/build
+[4.343s] creating /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/build/lib
+[4.344s] creating /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub
+[4.345s] copying py_pubsub/__init__.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub
+[4.346s] copying py_pubsub/publisher_member_function.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub
+[4.347s] running install
+[4.351s] running install_lib
+[4.359s] creating /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[4.360s] copying /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[4.361s] copying /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[4.365s] byte-compiling /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/__init__.py to __init__.cpython-38.pyc
+[4.375s] byte-compiling /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-38.pyc
+[4.379s] running install_data
+[4.384s] creating /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/install/py_pubsub/share/ament_index
+[4.386s] creating /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/install/py_pubsub/share/ament_index/resource_index
+[4.387s] creating /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/install/py_pubsub/share/ament_index/resource_index/packages
+[4.388s] copying resource/py_pubsub -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/install/py_pubsub/share/ament_index/resource_index/packages
+[4.389s] copying package.xml -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/install/py_pubsub/share/py_pubsub
+[4.390s] running install_egg_info
+[4.400s] Copying /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/py_pubsub.egg-info to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info
+[4.410s] running install_scripts
+[4.542s] Installing talker script to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/install/py_pubsub/lib/py_pubsub
+[4.545s] writing list of installed files to '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/install.log'
+[4.743s] Invoked command in '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub' returned '0': PYTHONPATH=/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub build --build-base /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/build install --prefix /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/install/py_pubsub --record /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub/build/py_pubsub/install.log --single-version-externally-managed
