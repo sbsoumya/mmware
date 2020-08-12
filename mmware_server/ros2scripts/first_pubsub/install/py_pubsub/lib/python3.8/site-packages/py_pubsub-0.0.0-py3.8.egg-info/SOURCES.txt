@@ -10,6 +10,8 @@ setup.py
 /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/zip-safe
 py_pubsub/__init__.py
 py_pubsub/publisher_member_function.py
+py_pubsub/ros2_kafka_bridge_pub.py
+py_pubsub/sub_ros2_pub_kafka.py
 py_pubsub/subscriber_member_function.py
 resource/py_pubsub
 test/test_copyright.py

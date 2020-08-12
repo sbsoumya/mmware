@@ -86,6 +86,7 @@ confluent.topic.replication.factor=1
 
 #-----For independent Zookeeper and kafka start HERE!!
 and then start kafka connect
+
 connect-distributed /etc/schema-registry/connect-avro-distributed.properties
 
 OR -------------------------------------------------------- via REST Better!!
@@ -97,7 +98,7 @@ curl -s -X POST -H 'Content-Type: application/json' http://localhost:8083/connec
 "config" : {
     "connector.class" : "io.confluent.connect.mqtt.MqttSourceConnector",
     "tasks.max" : "1",
-    "mqtt.server.uri" : "tcp://pi:1883",
+    "mqtt.server.uri" : "tcp://piubuntu:1883",
     "mqtt.topics" : "mqttsample",
     "kafka.topic" : "kafkasample",
     "confluent.topic.bootstrap.servers": "localhost:9092",
@@ -105,6 +106,8 @@ curl -s -X POST -H 'Content-Type: application/json' http://localhost:8083/connec
     "confluent.license":""
     }
 }'
+
+"mqtt.server.uri" : "tcp://localhost:1883",
 
 #=============Other curl commands
 curl -s "http://localhost:8083/connectors"

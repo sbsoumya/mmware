@@ -22,6 +22,8 @@ setup(
        'console_scripts': [
                 'talker = py_pubsub.publisher_member_function:main',
                 'listener = py_pubsub.subscriber_member_function:main',
+                'bridge = py_pubsub.sub_ros2_pub_kafka:main',
+                'bridge_pub = py_pubsub.ros2_kafka_bridge_pub:main',
         ],
     },
 )

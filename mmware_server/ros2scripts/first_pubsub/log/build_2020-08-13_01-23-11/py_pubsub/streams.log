@@ -1,0 +1,27 @@
+[0.622s] Invoking command in '/home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/src/py_pubsub': PYTHONPATH=/home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub build --build-base /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/build install --prefix /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub --record /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/install.log --single-version-externally-managed
+[1.191s] running egg_info
+[1.193s] writing /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[1.195s] writing dependency_links to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[1.195s] writing entry points to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[1.196s] writing requirements to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/requires.txt
+[1.196s] writing top-level names to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[1.291s] reading manifest file '/home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[1.293s] writing manifest file '/home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[1.294s] running build
+[1.294s] running build_py
+[1.295s] copying py_pubsub/ros2_kafka_bridge_pub.py -> /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub
+[1.295s] running install
+[1.298s] running install_lib
+[1.302s] copying /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub/ros2_kafka_bridge_pub.py -> /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[1.304s] byte-compiling /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/ros2_kafka_bridge_pub.py to ros2_kafka_bridge_pub.cpython-38.pyc
+[1.308s] running install_data
+[1.311s] running install_egg_info
+[1.316s] removing '/home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info' (and everything under it)
+[1.317s] Copying /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info
+[1.319s] running install_scripts
+[1.416s] Installing bridge script to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/py_pubsub
+[1.416s] Installing bridge_pub script to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/py_pubsub
+[1.416s] Installing listener script to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/py_pubsub
+[1.417s] Installing talker script to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/py_pubsub
+[1.417s] writing list of installed files to '/home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/install.log'
+[1.474s] Invoked command in '/home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/src/py_pubsub' returned '0': PYTHONPATH=/home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub build --build-base /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/build install --prefix /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub --record /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/install.log --single-version-externally-managed

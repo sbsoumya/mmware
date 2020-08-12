@@ -1,0 +1,5 @@
+  File "/home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/ros2_kafka_bridge_pub.py", line 43
+    print msg
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(msg)?
+

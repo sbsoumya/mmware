@@ -1,0 +1,25 @@
+running egg_info
+writing /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+writing dependency_links to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+writing entry points to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+writing requirements to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/requires.txt
+writing top-level names to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/top_level.txt
+reading manifest file '/home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+writing manifest file '/home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+running build
+running build_py
+copying py_pubsub/ros2_kafka_bridge_pub.py -> /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub
+running install
+running install_lib
+copying /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub/ros2_kafka_bridge_pub.py -> /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+byte-compiling /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/ros2_kafka_bridge_pub.py to ros2_kafka_bridge_pub.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info' (and everything under it)
+Copying /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info
+running install_scripts
+Installing bridge script to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/py_pubsub
+Installing bridge_pub script to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/py_pubsub
+Installing listener script to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/py_pubsub
+Installing talker script to /home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/py_pubsub
+writing list of installed files to '/home/soumya/mmware_mmwareserver/ros2/ros2scripts/first_pubsub/build/py_pubsub/install.log'
