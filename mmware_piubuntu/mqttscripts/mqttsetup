@@ -1,0 +1,18 @@
+#FOR PI MQTT Server
+sudo apt install mosquitto mosquitto-clients
+sudo systemctl enable mosquitto
+sudo systemctl status mosquitto
+
+#paho-mqtt for python
+pip install paho-mqtt
+
+#subscriber
+mosquitto_sub -h localhost -t "mqttsample"
+
+#publisher
+mosquitto_pub -h localhost -t "mqttsample" -m "Hello, world"
+
+#FOR OTHER SYSTEM MQTT CLIENT
+sudo apt-get install mosquitto-clients
+mosquitto_sub -h pi -t "mqttsample"
+mosquitto_pub -h pi -t "mqttsample" -m "Hello, world"

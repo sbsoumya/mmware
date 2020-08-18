@@ -1,0 +1,41 @@
+[1.955s] Invoking command in '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub': PYTHONPATH=/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub build --build-base /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build install --prefix /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub --record /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/install.log --single-version-externally-managed
+[3.647s] running egg_info
+[3.651s] writing /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[3.653s] writing dependency_links to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[3.655s] writing entry points to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[3.656s] writing requirements to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/requires.txt
+[3.657s] writing top-level names to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[3.898s] reading manifest file '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[3.906s] writing manifest file '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[3.907s] running build
+[3.908s] running build_py
+[3.909s] copying py_pubsub/sub_ros2_pub_kafka.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub
+[3.910s] copying py_pubsub/ros2_kafka_bridge_pub.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub
+[3.912s] copying py_pubsub/__init__.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub
+[3.913s] copying py_pubsub/subscriber_member_function.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub
+[3.915s] copying py_pubsub/publisher_member_function.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub
+[3.917s] running install
+[3.922s] running install_lib
+[3.929s] copying /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub/sub_ros2_pub_kafka.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[3.931s] copying /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub/ros2_kafka_bridge_pub.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[3.932s] copying /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[3.934s] copying /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub/subscriber_member_function.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[3.935s] copying /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[3.939s] byte-compiling /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/sub_ros2_pub_kafka.py to sub_ros2_pub_kafka.cpython-38.pyc
+[3.950s] byte-compiling /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/ros2_kafka_bridge_pub.py to ros2_kafka_bridge_pub.cpython-38.pyc
+[3.954s] byte-compiling /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/__init__.py to __init__.cpython-38.pyc
+[3.956s] byte-compiling /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/subscriber_member_function.py to subscriber_member_function.cpython-38.pyc
+[3.960s] byte-compiling /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-38.pyc
+[3.963s] running install_data
+[3.969s] copying resource/py_pubsub -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/share/ament_index/resource_index/packages
+[3.970s] copying package.xml -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/share/py_pubsub
+[3.971s] running install_egg_info
+[3.982s] removing '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info' (and everything under it)
+[3.984s] Copying /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info
+[3.993s] running install_scripts
+[4.112s] Installing bridge script to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/py_pubsub
+[4.113s] Installing bridge_pub script to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/py_pubsub
+[4.115s] Installing listener script to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/py_pubsub
+[4.116s] Installing talker script to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/py_pubsub
+[4.119s] writing list of installed files to '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/install.log'
+[4.304s] Invoked command in '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub' returned '0': PYTHONPATH=/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub build --build-base /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build install --prefix /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub --record /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/install.log --single-version-externally-managed

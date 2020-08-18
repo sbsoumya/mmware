@@ -1,0 +1,89 @@
+[0.000000] (-) TimerEvent: {}
+[0.001710] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict()}
+[0.003597] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[0.100535] (-) TimerEvent: {}
+[0.207183] (-) TimerEvent: {}
+[0.308592] (-) TimerEvent: {}
+[0.409753] (-) TimerEvent: {}
+[0.510975] (-) TimerEvent: {}
+[0.612082] (-) TimerEvent: {}
+[0.713127] (-) TimerEvent: {}
+[0.814267] (-) TimerEvent: {}
+[0.915397] (-) TimerEvent: {}
+[1.016618] (-) TimerEvent: {}
+[1.117755] (-) TimerEvent: {}
+[1.218872] (-) TimerEvent: {}
+[1.319913] (-) TimerEvent: {}
+[1.421007] (-) TimerEvent: {}
+[1.522138] (-) TimerEvent: {}
+[1.623222] (-) TimerEvent: {}
+[1.724282] (-) TimerEvent: {}
+[1.825486] (-) TimerEvent: {}
+[1.926890] (-) TimerEvent: {}
+[1.953620] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub', 'build', '--build-base', '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build', 'install', '--prefix', '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub', '--record', '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/src/py_pubsub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '192.168.29.250 39772 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/pi/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1001', 'DISPLAY': 'localhost:11.0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.29.250 39772 192.168.29.251 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1'}, 'shell': False}
+[2.027219] (-) TimerEvent: {}
+[2.128514] (-) TimerEvent: {}
+[2.229572] (-) TimerEvent: {}
+[2.330672] (-) TimerEvent: {}
+[2.431693] (-) TimerEvent: {}
+[2.532677] (-) TimerEvent: {}
+[2.633783] (-) TimerEvent: {}
+[2.734982] (-) TimerEvent: {}
+[2.836210] (-) TimerEvent: {}
+[2.937303] (-) TimerEvent: {}
+[3.038427] (-) TimerEvent: {}
+[3.139569] (-) TimerEvent: {}
+[3.240681] (-) TimerEvent: {}
+[3.341808] (-) TimerEvent: {}
+[3.442978] (-) TimerEvent: {}
+[3.544124] (-) TimerEvent: {}
+[3.645207] (-) TimerEvent: {}
+[3.650394] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[3.654935] (py_pubsub) StdoutLine: {'line': b'writing /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[3.656839] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[3.658592] (py_pubsub) StdoutLine: {'line': b'writing entry points to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[3.659880] (py_pubsub) StdoutLine: {'line': b'writing requirements to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[3.660973] (py_pubsub) StdoutLine: {'line': b'writing top-level names to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[3.745444] (-) TimerEvent: {}
+[3.846602] (-) TimerEvent: {}
+[3.901437] (py_pubsub) StdoutLine: {'line': b"reading manifest file '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[3.909745] (py_pubsub) StdoutLine: {'line': b"writing manifest file '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[3.911110] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[3.912005] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[3.913062] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/sub_ros2_pub_kafka.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub\n'}
+[3.914291] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/ros2_kafka_bridge_pub.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub\n'}
+[3.915871] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/__init__.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub\n'}
+[3.917200] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/subscriber_member_function.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub\n'}
+[3.918851] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/publisher_member_function.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub\n'}
+[3.921004] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[3.926212] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[3.933099] (py_pubsub) StdoutLine: {'line': b'copying /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub/sub_ros2_pub_kafka.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub\n'}
+[3.934681] (py_pubsub) StdoutLine: {'line': b'copying /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub/ros2_kafka_bridge_pub.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub\n'}
+[3.936292] (py_pubsub) StdoutLine: {'line': b'copying /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub\n'}
+[3.937628] (py_pubsub) StdoutLine: {'line': b'copying /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub/subscriber_member_function.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub\n'}
+[3.939340] (py_pubsub) StdoutLine: {'line': b'copying /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub\n'}
+[3.943272] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/sub_ros2_pub_kafka.py to sub_ros2_pub_kafka.cpython-38.pyc\n'}
+[3.946822] (-) TimerEvent: {}
+[3.954029] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/ros2_kafka_bridge_pub.py to ros2_kafka_bridge_pub.cpython-38.pyc\n'}
+[3.958071] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/__init__.py to __init__.cpython-38.pyc\n'}
+[3.960401] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/subscriber_member_function.py to subscriber_member_function.cpython-38.pyc\n'}
+[3.963763] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-38.pyc\n'}
+[3.967009] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[3.973011] (py_pubsub) StdoutLine: {'line': b'copying resource/py_pubsub -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/share/ament_index/resource_index/packages\n'}
+[3.974514] (py_pubsub) StdoutLine: {'line': b'copying package.xml -> /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/share/py_pubsub\n'}
+[3.975561] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.985609] (py_pubsub) StdoutLine: {'line': b"removing '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[3.988292] (py_pubsub) StdoutLine: {'line': b'Copying /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/py_pubsub.egg-info to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info\n'}
+[3.997107] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[4.047003] (-) TimerEvent: {}
+[4.115598] (py_pubsub) StdoutLine: {'line': b'Installing bridge script to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/py_pubsub\n'}
+[4.117106] (py_pubsub) StdoutLine: {'line': b'Installing bridge_pub script to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/py_pubsub\n'}
+[4.118516] (py_pubsub) StdoutLine: {'line': b'Installing listener script to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/py_pubsub\n'}
+[4.120018] (py_pubsub) StdoutLine: {'line': b'Installing talker script to /home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/install/py_pubsub/lib/py_pubsub\n'}
+[4.123060] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/pi/Desktop/mmware_piubuntu/ros2/ros2scripts/first_pubsub/build/py_pubsub/install.log'\n"}
+[4.147311] (-) TimerEvent: {}
+[4.248660] (-) TimerEvent: {}
+[4.306543] (py_pubsub) CommandEnded: {'returncode': 0}
+[4.348917] (-) TimerEvent: {}
+[4.434698] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[4.440948] (-) EventReactorShutdown: {}
