@@ -3,6 +3,7 @@ from time import sleep
 from json import dumps
 import socket
 import random
+from datetime import datetime
 
 broker_address="piubuntu" 
 topic = "mqttsample"
@@ -16,7 +17,10 @@ Plumber=socket.gethostname()
 Plumber=Plumber+"mqtt"
 print ("MQTT Publisher: "+Plumber)              
 for number in range(1000):
-    data = {'number' : random.randint(1,101), 'plumber' : Plumber, 'count' : number}
+    dateTimeObj = datetime.now()
+    timestampStr = dateTimeObj.strftime("%d-%b-%Y (%H:%M:%S.%f)")
+    data = {'number' : random.randint(1,101), 'plumber' : Plumber, 'timestamp' : timestampStr}
     message=dumps(data)
+    print(message)
     client.publish(topic,message)
     sleep(5)

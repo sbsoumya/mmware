@@ -21,9 +21,7 @@ from kafka import KafkaProducer
 from json import dumps
 
 
-producer = KafkaProducer(bootstrap_servers=['mmwserver:9092'],
-                         value_serializer=lambda x: 
-                         dumps(x).encode('utf-8'))
+producer = KafkaProducer(bootstrap_servers=['mmwserver:9092'])
 
 class MinimalSubscriber(Node):
 
@@ -38,7 +36,7 @@ class MinimalSubscriber(Node):
 
     def listener_callback(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
-        producer.send('kafkasample', value=msg.data)
+        producer.send('kafkasample', bytes(msg.data, 'utf-8'))
 
 
 def main(args=None):

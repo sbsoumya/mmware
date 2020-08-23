@@ -15,11 +15,15 @@
 import rclpy
 from rclpy.node import Node
 
+#from rospy_message_converter import json_message_converter
 from std_msgs.msg import String
 
 from json import dumps
 import socket
 import random
+from datetime import datetime
+
+
 
 Plumber=socket.gethostname()
 Plumber=Plumber+"ROS2"
@@ -36,8 +40,11 @@ class MinimalPublisher(Node):
 
     def timer_callback(self):
         msg = String()
-        data = {'number' : random.randint(1,101), 'plumber' : Plumber, 'count' : self.i}
-        msg.data=dumps(data)
+        dateTimeObj = datetime.now()
+        data = {'number' : random.randint(1,101), 'plumber' : Plumber, 'timestamp' :dateTimeObj.strftime("%d-%b-%Y (%H:%M:%S.%f)")}
+        json_str=dumps(data)
+        msg.data= json_str
+        print (msg)
         self.publisher_.publish(msg)
         self.get_logger().info('Publishing: "%s"' % msg.data)
         self.i += 1

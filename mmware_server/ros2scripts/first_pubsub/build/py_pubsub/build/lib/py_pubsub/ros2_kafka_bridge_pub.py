@@ -21,6 +21,9 @@ from std_msgs.msg import String
 from json import dumps
 import socket
 import random
+from datetime import datetime
+
+
 
 Plumber=socket.gethostname()
 Plumber=Plumber+"ROS2"
@@ -37,7 +40,8 @@ class MinimalPublisher(Node):
 
     def timer_callback(self):
         msg = String()
-        data = {'number' : random.randint(1,101), 'plumber' : Plumber, 'count' : self.i}
+        dateTimeObj = datetime.now()
+        data = {'number' : random.randint(1,101), 'plumber' : Plumber, 'timestamp' :dateTimeObj.strftime("%d-%b-%Y (%H:%M:%S.%f)")}
         json_str=dumps(data)
         msg.data= json_str
         print (msg)

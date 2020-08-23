@@ -1,0 +1,62 @@
+from kafka import KafkaConsumer
+from json import loads
+from datetime import datetime
+topic= "kafkasample"
+#consumer = KafkaConsumer(topic,bootstrap_servers=['mmwserver:9092'],value_deserializer=lambda x: loads(x.decode('utf-8')[))
+consumer = KafkaConsumer(topic,bootstrap_servers=['mmwserver:9092']) 
+oldnumber=0;
+oldplumber="GOD";
+Timedict={}
+for message in consumer:
+	#print (message.value)
+	try:
+		try:
+			message_dict= loads(message.value)
+		except:
+			try:
+				#print (message.value[6:])
+                                message_dict= loads(message.value[7:])
+			except:
+                                #message_dict= loads(message.value[6:])
+                                print (message.value[7:])
+				print ("message parsing hack failed")
+		
+		#print (message_dict["plumber"]+" counts "+ str(message_dict["number"]))
+		recvtime = datetime.now()
+                timestampStr = recvtime.strftime("%d-%b-%Y (%H:%M:%S.%f)")
+                #print('Current Timestamp : ', timestampStr)
+                #print(timestampStr+":"+ message_dict["plumber"]+" -- "+str(message_dict["number"])+" ,sent at "+message_dict["timestamp"])
+                senttime=time.strptime(message_dict["timestamp"],"%d-%b-%Y (%H:%M:%S.%f)")
+                timediff=recvtime-senttime
+                try:
+                    Timedict[message_dict["plumber"][0]++
+                    Timedict[message_dict["plumber"][1] = Timedict[message_dict["plumber"][1]+timediff
+                    Timedict[message_dict["plumber"][2]=Timedict[message_dict["plumber"])[1]/Timedict[message_dict["plumber"])[0]
+                except:
+                    Timedict[message_dict["plumber"][0]=1
+                    Timedict[message_dict["plumber"][1]=timediff
+                    Timedict[message_dict["plumber"][2]=Timedict[message_dict["plumber"])[1]/Timedict[message_dict["plumber"])[0]
+                print(Timedict)
+                if oldnumber>message_dict["number"]:
+			
+			winner = oldplumber
+		else:
+			winner= message_dict["plumber"]
+		
+		oldnumber=message_dict["number"]
+		oldplumber=message_dict["plumber"]
+		
+		#print (winner+" wins!!")
+		
+	except:
+                
+                print ("message not in format")
+
+"""consumer = KafkaConsumer(
+    'numtest',
+     bootstrap_servers=['localhost:9092'],
+     auto_offset_reset='earliest',
+     enable_auto_commit=True,
+     group_id='my-group',
+     value_deserializer=lambda x: loads(x.decode('utf-8')))
+     """
